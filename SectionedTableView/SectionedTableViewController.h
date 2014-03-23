@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  SectionedTableViewController.h
 //  SectionedTableView
 //
 //  Created by Dallas Johnson on 21/03/2014.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface SectionedTableViewController : UITableViewController
 
 @end

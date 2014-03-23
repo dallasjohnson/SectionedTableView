@@ -7,20 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8E38A27518DC27AA0055C766 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E38A27418DC27AA0055C766 /* Storyboard.storyboard */; };
 		8EC8D0E718DB354400CF1CF7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EC8D0E618DB354400CF1CF7 /* Foundation.framework */; };
 		8EC8D0E918DB354400CF1CF7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EC8D0E818DB354400CF1CF7 /* CoreGraphics.framework */; };
 		8EC8D0EB18DB354400CF1CF7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EC8D0EA18DB354400CF1CF7 /* UIKit.framework */; };
 		8EC8D0F118DB354400CF1CF7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8EC8D0EF18DB354400CF1CF7 /* InfoPlist.strings */; };
 		8EC8D0F318DB354400CF1CF7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EC8D0F218DB354400CF1CF7 /* main.m */; };
 		8EC8D0F718DB354400CF1CF7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EC8D0F618DB354400CF1CF7 /* AppDelegate.m */; };
-		8EC8D0FA18DB354400CF1CF7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8EC8D0F818DB354400CF1CF7 /* Main.storyboard */; };
-		8EC8D0FD18DB354400CF1CF7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EC8D0FC18DB354400CF1CF7 /* ViewController.m */; };
 		8EC8D0FF18DB354400CF1CF7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8EC8D0FE18DB354400CF1CF7 /* Images.xcassets */; };
 		8EC8D10618DB354400CF1CF7 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EC8D10518DB354400CF1CF7 /* XCTest.framework */; };
 		8EC8D10718DB354400CF1CF7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EC8D0E618DB354400CF1CF7 /* Foundation.framework */; };
 		8EC8D10818DB354400CF1CF7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EC8D0EA18DB354400CF1CF7 /* UIKit.framework */; };
 		8EC8D11018DB354400CF1CF7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8EC8D10E18DB354400CF1CF7 /* InfoPlist.strings */; };
-		8EC8D11218DB354500CF1CF7 /* SectionedTableViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EC8D11118DB354400CF1CF7 /* SectionedTableViewTests.m */; };
+		8EC8D11218DB354500CF1CF7 /* ItemSectionGroupTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EC8D11118DB354400CF1CF7 /* ItemSectionGroupTests.m */; };
+		8EC8D11E18DB359C00CF1CF7 /* SectionedTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EC8D11C18DB359C00CF1CF7 /* SectionedTableViewController.m */; };
+		8EC8D11F18DB359C00CF1CF7 /* SectionedTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EC8D11C18DB359C00CF1CF7 /* SectionedTableViewController.m */; };
+		8EC8D12418DB377700CF1CF7 /* ItemSectionGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EC8D12318DB377700CF1CF7 /* ItemSectionGroup.m */; };
+		8EC8D12518DB377700CF1CF7 /* ItemSectionGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EC8D12318DB377700CF1CF7 /* ItemSectionGroup.m */; };
+		8EC8D12818DB378F00CF1CF7 /* Item.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EC8D12718DB378F00CF1CF7 /* Item.m */; };
+		8EC8D12918DB378F00CF1CF7 /* Item.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EC8D12718DB378F00CF1CF7 /* Item.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8E38A27418DC27AA0055C766 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Storyboard.storyboard; path = SectionedTableView/Storyboard.storyboard; sourceTree = "<group>"; };
 		8EC8D0E318DB354400CF1CF7 /* SectionedTableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SectionedTableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EC8D0E618DB354400CF1CF7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		8EC8D0E818DB354400CF1CF7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -44,15 +50,18 @@
 		8EC8D0F418DB354400CF1CF7 /* SectionedTableView-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SectionedTableView-Prefix.pch"; sourceTree = "<group>"; };
 		8EC8D0F518DB354400CF1CF7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8EC8D0F618DB354400CF1CF7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		8EC8D0F918DB354400CF1CF7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		8EC8D0FB18DB354400CF1CF7 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		8EC8D0FC18DB354400CF1CF7 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		8EC8D0FE18DB354400CF1CF7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		8EC8D10418DB354400CF1CF7 /* SectionedTableViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SectionedTableViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EC8D10518DB354400CF1CF7 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		8EC8D10D18DB354400CF1CF7 /* SectionedTableViewTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SectionedTableViewTests-Info.plist"; sourceTree = "<group>"; };
 		8EC8D10F18DB354400CF1CF7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		8EC8D11118DB354400CF1CF7 /* SectionedTableViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SectionedTableViewTests.m; sourceTree = "<group>"; };
+		8EC8D11118DB354400CF1CF7 /* ItemSectionGroupTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ItemSectionGroupTests.m; sourceTree = "<group>"; };
+		8EC8D11B18DB359C00CF1CF7 /* SectionedTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SectionedTableViewController.h; path = SectionedTableView/SectionedTableViewController.h; sourceTree = "<group>"; };
+		8EC8D11C18DB359C00CF1CF7 /* SectionedTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SectionedTableViewController.m; path = SectionedTableView/SectionedTableViewController.m; sourceTree = "<group>"; };
+		8EC8D12218DB377700CF1CF7 /* ItemSectionGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ItemSectionGroup.h; path = SectionedTableView/ItemSectionGroup.h; sourceTree = "<group>"; };
+		8EC8D12318DB377700CF1CF7 /* ItemSectionGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ItemSectionGroup.m; path = SectionedTableView/ItemSectionGroup.m; sourceTree = "<group>"; };
+		8EC8D12618DB378F00CF1CF7 /* Item.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Item.h; sourceTree = "<group>"; };
+		8EC8D12718DB378F00CF1CF7 /* Item.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Item.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,8 +91,15 @@
 		8EC8D0DA18DB354400CF1CF7 = {
 			isa = PBXGroup;
 			children = (
+				8EC8D12218DB377700CF1CF7 /* ItemSectionGroup.h */,
+				8EC8D12318DB377700CF1CF7 /* ItemSectionGroup.m */,
+				8EC8D12618DB378F00CF1CF7 /* Item.h */,
+				8EC8D12718DB378F00CF1CF7 /* Item.m */,
+				8EC8D11B18DB359C00CF1CF7 /* SectionedTableViewController.h */,
+				8EC8D11C18DB359C00CF1CF7 /* SectionedTableViewController.m */,
+				8E38A27418DC27AA0055C766 /* Storyboard.storyboard */,
 				8EC8D0EC18DB354400CF1CF7 /* SectionedTableView */,
-				8EC8D10B18DB354400CF1CF7 /* SectionedTableViewTests */,
+				8EC8D10B18DB354400CF1CF7 /* ItemSectionGroupTests */,
 				8EC8D0E518DB354400CF1CF7 /* Frameworks */,
 				8EC8D0E418DB354400CF1CF7 /* Products */,
 			);
@@ -114,9 +130,6 @@
 			children = (
 				8EC8D0F518DB354400CF1CF7 /* AppDelegate.h */,
 				8EC8D0F618DB354400CF1CF7 /* AppDelegate.m */,
-				8EC8D0F818DB354400CF1CF7 /* Main.storyboard */,
-				8EC8D0FB18DB354400CF1CF7 /* ViewController.h */,
-				8EC8D0FC18DB354400CF1CF7 /* ViewController.m */,
 				8EC8D0FE18DB354400CF1CF7 /* Images.xcassets */,
 				8EC8D0ED18DB354400CF1CF7 /* Supporting Files */,
 			);
@@ -134,12 +147,13 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		8EC8D10B18DB354400CF1CF7 /* SectionedTableViewTests */ = {
+		8EC8D10B18DB354400CF1CF7 /* ItemSectionGroupTests */ = {
 			isa = PBXGroup;
 			children = (
-				8EC8D11118DB354400CF1CF7 /* SectionedTableViewTests.m */,
+				8EC8D11118DB354400CF1CF7 /* ItemSectionGroupTests.m */,
 				8EC8D10C18DB354400CF1CF7 /* Supporting Files */,
 			);
+			name = ItemSectionGroupTests;
 			path = SectionedTableViewTests;
 			sourceTree = "<group>";
 		};
@@ -229,8 +243,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				8EC8D0FF18DB354400CF1CF7 /* Images.xcassets in Resources */,
+				8E38A27518DC27AA0055C766 /* Storyboard.storyboard in Resources */,
 				8EC8D0F118DB354400CF1CF7 /* InfoPlist.strings in Resources */,
-				8EC8D0FA18DB354400CF1CF7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,9 +263,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8EC8D0FD18DB354400CF1CF7 /* ViewController.m in Sources */,
+				8EC8D12818DB378F00CF1CF7 /* Item.m in Sources */,
+				8EC8D11E18DB359C00CF1CF7 /* SectionedTableViewController.m in Sources */,
 				8EC8D0F718DB354400CF1CF7 /* AppDelegate.m in Sources */,
 				8EC8D0F318DB354400CF1CF7 /* main.m in Sources */,
+				8EC8D12418DB377700CF1CF7 /* ItemSectionGroup.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,7 +275,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8EC8D11218DB354500CF1CF7 /* SectionedTableViewTests.m in Sources */,
+				8EC8D12918DB378F00CF1CF7 /* Item.m in Sources */,
+				8EC8D11F18DB359C00CF1CF7 /* SectionedTableViewController.m in Sources */,
+				8EC8D11218DB354500CF1CF7 /* ItemSectionGroupTests.m in Sources */,
+				8EC8D12518DB377700CF1CF7 /* ItemSectionGroup.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,14 +299,6 @@
 				8EC8D0F018DB354400CF1CF7 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		8EC8D0F818DB354400CF1CF7 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8EC8D0F918DB354400CF1CF7 /* Base */,
-			);
-			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 		8EC8D10E18DB354400CF1CF7 /* InfoPlist.strings */ = {
@@ -456,6 +467,7 @@
 				8EC8D11718DB354500CF1CF7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8EC8D11818DB354500CF1CF7 /* Build configuration list for PBXNativeTarget "SectionedTableViewTests" */ = {
 			isa = XCConfigurationList;
@@ -464,6 +476,7 @@
 				8EC8D11A18DB354500CF1CF7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
