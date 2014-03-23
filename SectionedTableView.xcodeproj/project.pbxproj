@@ -58,10 +58,10 @@
 		8EC8D11118DB354400CF1CF7 /* ItemSectionGroupTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ItemSectionGroupTests.m; sourceTree = "<group>"; };
 		8EC8D11B18DB359C00CF1CF7 /* SectionedTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SectionedTableViewController.h; path = SectionedTableView/SectionedTableViewController.h; sourceTree = "<group>"; };
 		8EC8D11C18DB359C00CF1CF7 /* SectionedTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SectionedTableViewController.m; path = SectionedTableView/SectionedTableViewController.m; sourceTree = "<group>"; };
-		8EC8D12218DB377700CF1CF7 /* ItemSectionGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ItemSectionGroup.h; path = SectionedTableView/ItemSectionGroup.h; sourceTree = "<group>"; };
-		8EC8D12318DB377700CF1CF7 /* ItemSectionGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ItemSectionGroup.m; path = SectionedTableView/ItemSectionGroup.m; sourceTree = "<group>"; };
-		8EC8D12618DB378F00CF1CF7 /* Item.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Item.h; sourceTree = "<group>"; };
-		8EC8D12718DB378F00CF1CF7 /* Item.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Item.m; sourceTree = "<group>"; };
+		8EC8D12218DB377700CF1CF7 /* ItemSectionGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ItemSectionGroup.h; path = SectionedTableView/Model/ItemSectionGroup.h; sourceTree = "<group>"; };
+		8EC8D12318DB377700CF1CF7 /* ItemSectionGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ItemSectionGroup.m; path = SectionedTableView/Model/ItemSectionGroup.m; sourceTree = "<group>"; };
+		8EC8D12618DB378F00CF1CF7 /* Item.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Item.h; path = SectionedTableView/Model/Item.h; sourceTree = "<group>"; };
+		8EC8D12718DB378F00CF1CF7 /* Item.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Item.m; path = SectionedTableView/Model/Item.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,13 +88,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		8EC8D0DA18DB354400CF1CF7 = {
+		8E3FEFEF18DF16C000A5D4DD /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				8EC8D12218DB377700CF1CF7 /* ItemSectionGroup.h */,
 				8EC8D12318DB377700CF1CF7 /* ItemSectionGroup.m */,
 				8EC8D12618DB378F00CF1CF7 /* Item.h */,
 				8EC8D12718DB378F00CF1CF7 /* Item.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		8EC8D0DA18DB354400CF1CF7 = {
+			isa = PBXGroup;
+			children = (
+				8E3FEFEF18DF16C000A5D4DD /* Model */,
 				8EC8D11B18DB359C00CF1CF7 /* SectionedTableViewController.h */,
 				8EC8D11C18DB359C00CF1CF7 /* SectionedTableViewController.m */,
 				8E38A27418DC27AA0055C766 /* Storyboard.storyboard */,
