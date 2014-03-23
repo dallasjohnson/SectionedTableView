@@ -42,10 +42,14 @@ static NSString *CellIdentifier = @"CellIdentifer";
   return [NSString stringWithFormat:@"All Items for group : %@", groupObject.groupTitle];
 }
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
   UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
-  Item * item = [self.items objectAtIndex:indexPath.row];
+
+  ItemSectionGroup * groupObject = [self.items objectAtIndex:indexPath.section];
+  Item *item = groupObject.items[indexPath.row];
   cell.textLabel.text = item.itemTitle;
+
   return cell;
 }
 
@@ -69,5 +73,10 @@ static NSString *CellIdentifier = @"CellIdentifer";
   self.items = [ItemSectionGroup addAndGroupItems:addedArray toArray:self.items ascending:YES];
 
 }
+
+
+
+
+
 
 @end
