@@ -34,7 +34,9 @@
 
     sectionKey = [(Item*)sortedInputArray[0] groupTitle];
 
-    NSPredicate *sectionPredicate = [NSPredicate predicateWithFormat:@"groupTitle = %@",sectionKey];
+    NSPredicate *sectionPredicate = [NSPredicate predicateWithBlock:^BOOL(Item* item, NSDictionary *bindings) {
+      return [item.groupTitle isEqualToString:sectionKey];
+    }];
 
     NSArray *filteredArray = [sortedInputArray filteredArrayUsingPredicate:sectionPredicate];
 

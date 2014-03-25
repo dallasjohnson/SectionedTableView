@@ -13,15 +13,9 @@ The solution relies on adding [**ItemSectionGroup**](SectionedTableView/Model/It
 This demo project has a model about as simple as you can get but should be enough to show the pattern I have used so you can customise it for your own model classes. 
 
 ---
-There are other solutions to this problem on Stackoverflow that have iterated through all items one and a time filtering as it goes. I thought it may have been better to take advantage of some of the built in NSArray methods to get better performance.
+There are other solutions to this problem on Stackoverflow that have iterated through all items one and a time filtering as it goes. I thought it may have been better to take advantage of some of the built in NSArray methods using NSPredicates for filtering to get better performance.
 
-Some people prefer to not use NSPredicates so the same filtering functionality could be achived using a block, filtering with the help of something like [EnumeratorKit](https://github.com/sharplet/EnumeratorKit)
-
-	ItemSectionGroup *filteredArray = [sortedInputArray find:^BOOL(ItemSectionGroup *group) {
-            return [group.groupTitle isEqualToString:sectionKey];
-        }];
 To keep this example simple and without adding other libraries and frameworks, this example just uses the built in classes and methods. 
-
 
 ### License
 MIT License
